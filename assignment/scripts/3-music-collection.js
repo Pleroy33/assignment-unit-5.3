@@ -18,24 +18,38 @@ function addToCollection(collection, title, artist, yearPublished) {
 }
 
 
-addToCollection(myCollection,'Reprise','Moby','2021');//
-addToCollection(myCollection, 'Lets Go', 'Rancid','1994');
-addToCollection(myCollection,'IV', 'badbadnotgood','2016');
-addToCollection(myCollection,'Tape Deck Heart', 'Frank Turner & the Sleeping Souls', '2013');
-addToCollection(myCollection, 'MICHAEL','Killer Mike','2023');
+addToCollection(myCollection, 'Reprise', 'Moby', '2021');//
+addToCollection(myCollection, 'Lets Go', 'Rancid', '1994');
+addToCollection(myCollection, 'IV', 'badbadnotgood', '2016');
+addToCollection(myCollection, 'Tape Deck Heart', 'Frank Turner & the Sleeping Souls', '2013');
+addToCollection(myCollection, 'MICHAEL', 'Killer Mike', '2023');
 addToCollection(myCollection, 'Streetcore', 'Joe Strummer', '2003');
-  
+
 
 console.log('This is my collection', myCollection);//console logged my collection to test.
 
-function showCollection(collection){
-  for (i=0; i<collection.length; i++){
-  console.log(collection[i].title + 'by ' + collection[i].artist + ' released ' + collection[i].yearPublished)
-}}
+function showCollection(collection,) {
+  for (i = 0; i < collection.length; i++) {
+    console.log(collection[i].title + ' by ' + collection[i].artist + ' released ' + collection[i].yearPublished)
+  }
+};
 
 showCollection(myCollection);
 
 
+function findByArtist(collection, artist) {
+  console.log('Running findByArtist')
+  result = [];
+  for (i = 0; i < collection.length; i++) {
+    if (collection[i].artist === artist) { result.push(collection[i]) }
+  }
+  console.log(result)
+  return result;
+}
+
+
+findByArtist(myCollection,'Moby');
+findByArtist(myCollection,'Phish');
 
 
 
