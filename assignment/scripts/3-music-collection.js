@@ -24,6 +24,8 @@ addToCollection(myCollection, 'IV', 'badbadnotgood', '2016');
 addToCollection(myCollection, 'Tape Deck Heart', 'Frank Turner & the Sleeping Souls', '2013');
 addToCollection(myCollection, 'MICHAEL', 'Killer Mike', '2023');
 addToCollection(myCollection, 'Streetcore', 'Joe Strummer', '2003');
+addToCollection(myCollection, 'Everything is Wrong', 'Moby', '1995');
+addToCollection(myCollection, 'Smash', 'The Offspring', '1994');
 
 
 console.log('This is my collection', myCollection);//console logged my collection to test.
